@@ -87,7 +87,7 @@ touch /app/.apt/etc/datadog-agent/conf.d/laravel.d/conf.yaml
 echo "logs:
   - type: file
     path: /app/storage/logs/laravel.log
-    source: 'laravel'
+    source: 'laravel'" >> /app/.apt/etc/datadog-agent/conf.d/laravel.d/conf.yaml
 
 echo "Done" | indent
 
