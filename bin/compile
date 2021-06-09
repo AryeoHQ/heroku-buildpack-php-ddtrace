@@ -86,11 +86,8 @@ mkdir -p /app/.apt/etc/datadog-agent/conf.d/laravel.d
 touch /app/.apt/etc/datadog-agent/conf.d/laravel.d/conf.yaml
 echo "logs:
   - type: file
-    path: /app/storage/logs/laravel-json-datadog-fpm-fcgi.log
-    source: 'fpm'
-  - type: file
-    path: /app/storage/logs/laravel-json-datadog-cli.log
-    source: 'cli'" >> /app/.apt/etc/datadog-agent/conf.d/laravel.d/conf.yaml
+    path: /app/storage/logs/laravel.log
+    source: 'laravel'
 
 echo "Done" | indent
 
